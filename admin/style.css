@@ -1,0 +1,235 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+.toplevel_page_ironstrap-options .acf-tab-group li {
+	background-color: #141414;
+	color: #fff;
+}
+
+.toplevel_page_ironstrap-options .acf-tab-wrap.-left .acf-tab-group li a {
+	color: #fff !important;
+	border: 1px solid #454545 !important;
+	padding: 15px 10px !important;
+}
+
+.toplevel_page_ironstrap-options .acf-tab-wrap.-left .acf-tab-group li.active a {
+	background-color: #454545 !important;
+}
+
+.toplevel_page_ironstrap-options .acf-fields.-sidebar:before {
+	background-color: #141414 !important;
+}
+
+.toplevel_page_ironstrap-options .acf-postbox .ui-sortable-handle {
+	background-color: #b41f24;
+	color: #fff !important;
+	border: none !important;
+}
+
+.toplevel_page_ironstrap-options .toggle-indicator {
+	color: #fff;
+}
+
+#toplevel_page_ironstrap-options .dashicons-admin-generic:before {
+	background: url(images/admin-options-icon.png) no-repeat center center;
+	background-size: 18px 18px;
+	content: "" !important;
+	opacity: .6;
+}
+
+.current.toplevel_page_ironstrap-options .dashicons-admin-generic:before {
+	opacity: 1 !important;
+}
+
+.toplevel_page_ironstrap-options .acf-postbox h2.hndle:before {
+	background-image: url(images/admin-options-icon-lg.png);
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    content: "";
+    width: 70px;
+    height: 70px;
+}
+
+.toplevel_page_ironstrap-options .acf-postbox h2.hndle span {
+	font-size: 22px;
+	line-height: 70px;
+	vertical-align: top;
+	padding-left: 10px;
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+    .toplevel_page_ironstrap-options .acf-postbox h2.hndle:before {
+        background-image: url(images/admin-options-icon-lg@2x.png);
+        background-size: 70px 70px;
+        background-repeat: no-repeat;
+    }
+}
+
+.toplevel_page_ironstrap-options .acf-hl > .active {
+	border-right: 4px solid #b41f24;
+}
+
+.toplevel_page_ironstrap-options .acf-hl a.acf-tab-button:before {
+	font-family: FontAwesome;
+	padding-right: 10px;
+	font-size: 15px;
+}
+
+.toplevel_page_ironstrap-options .acf-hl a.acf-tab-button[data-key="field_58b6eae8d59d6"]:before {
+	content: "\f0ac";
+}
+
+.toplevel_page_ironstrap-options .acf-hl a.acf-tab-button[data-key="field_58b6ebcbfed4c"]:before {
+	content: "\f2d0";
+}
+
+.toplevel_page_ironstrap-options .acf-hl a.acf-tab-button[data-key="field_58b6fa908051b"]:before {
+	content: "\f2d0";
+}
+
+.toplevel_page_ironstrap-options .acf-hl a.acf-tab-button[data-key="field_58b73573349e1"]:before {
+	content: "\f071";
+}
+
+.toplevel_page_ironstrap-options .acf-hl a.acf-tab-button[data-key="field_58b74604e1c6c"]:before {
+	content: "\f0db";
+}
+
+.toplevel_page_ironstrap-options .acf-hl a.acf-tab-button[data-key="field_58c9962d7d59c"]:before {
+	content: "\f031";
+}
+
+.toplevel_page_ironstrap-options .acf-hl a.acf-tab-button[data-key="field_58d168e812474"]:before {
+	content: "\f121";
+}
+
+.toplevel_page_ironstrap-options .acf-hl a.acf-tab-button[data-key="field_58d16fae8cd61"]:before {
+	content: "\f277";
+}
+
+.toplevel_page_ironstrap-options .acf-hl a.acf-tab-button[data-key="field_58d2bfee3d6d8"]:before {
+	content: "\f005";
+}
+
+.toplevel_page_ironstrap-options .acf-hl a.acf-tab-button[data-key="field_58d2bfee3d6d8"]:before {
+	content: "\f005";
+}
+
+.toplevel_page_ironstrap-options .acf-hl a.acf-tab-button[data-key="field_58d2bfee3d6d8"]:before {
+	content: "\f005";
+}
+
+.toplevel_page_ironstrap-options .acf-hl a.acf-tab-button[data-key="field_58d3364224930"]:before {
+	content: "\f002";
+}
+
+.toplevel_page_ironstrap-options .acf-hl a.acf-tab-button[data-key="field_58e6591159cc1"]:before {
+	content: "\f1c0";
+}
+
+.toplevel_page_ironstrap-options .acf-button {
+	color: #555 !important;
+	border-color: #ccc !important;
+	background: #f7f7f7 !important;
+	-webkit-box-shadow: 0 1px 0 #ccc !important;
+	box-shadow: 0 1px 0 #ccc !important;
+	text-shadow: none !important;
+}
+
+
+.toplevel_page_ironstrap-options #submitdiv .handlediv, .toplevel_page_ironstrap-options #submitdiv .hndle {
+	display: none !important;
+}
+
+.toplevel_page_ironstrap-options #major-publishing-actions {
+	padding: 0;
+	background: none;
+	border: none;
+}
+
+.toplevel_page_ironstrap-options .spinner {
+	display: none !important
+}
+
+.toplevel_page_ironstrap-options #submitdiv {
+	min-width: 0;
+	border: none;
+	background: none !important;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	margin: 0;
+}
+
+.toplevel_page_ironstrap-options .acf-postbox .handlediv {
+	display: none !important;
+}
+
+.toplevel_page_ironstrap-options #postbox-container-1 {
+	margin-right: 30px !important;
+	width: intrinsic !important;
+	float: right !important;
+	position: absolute;
+	z-index: 10;
+	right: 0;
+}
+
+.toplevel_page_ironstrap-options #poststuff #post-body.columns-2 #side-sortables {
+	height: intrinsic;
+	width: intrinsic;
+	min-height: 0;
+}
+
+.toplevel_page_ironstrap-options #poststuff #post-body.columns-2 {
+	margin: 0;
+}
+
+.toplevel_page_ironstrap-options #major-publishing-actions .button, .toplevel_page_ironstrap-options #major-publishing-actions .button-primary-disabled {
+	color: #454545 !important;
+	background-color: #fff !important;
+	text-shadow: none;
+	text-transform: uppercase;
+	border: none;
+	transform: none !important;
+	-webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2) !important;
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2) !important;
+	padding: 5px 40px;
+	z-index: 10;
+	height: 40px;
+	margin-top: 43px;
+}
+
+.toplevel_page_ironstrap-options .acf-fields.-sidebar {
+	padding-left: 200px !important;
+}
+
+.toplevel_page_ironstrap-options .acf-fields.-sidebar:before {
+	width: 199px !important;
+}
+
+.toplevel_page_ironstrap-options .acf-tab-group {
+	width: 199px !important;
+}
+
+.toplevel_page_ironstrap-options .acf-fields > .acf-field {
+	border-top-width: 3px; 
+}
+
+.toplevel_page_ironstrap-options .acf-label label {
+	font-weight: 500 !important;
+	font-size: 15px;
+}
+
+.toplevel_page_ironstrap-options .acf-settings-wrap > h1 {
+	display: none;
+}
+
+.toplevel_page_ironstrap-options #postbox-container-2 {
+	margin-top: 10px;
+}
+
+.toplevel_page_ironstrap-options #post-body {
+	position: relative;
+}
