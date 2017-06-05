@@ -8,5 +8,4 @@
  * @version 1.0
  */
 
- ?>
-<?php get_template_part('page'); ?>
+get_template_part('page'); ?>

@@ -9,33 +9,31 @@
  */
  ?>
 
-<div class="wrapper" id="wrapper-footer">
+<footer class="wrapper" id="site-wrapper-footer">
 
     <div class="container">
 
-        <footer class="site-footer">
-			
-			<?php wp_nav_menu(array('theme_location' => 'footer-menu', 'container' => false, 'depth' => 1, 'menu_class' => 'footer-menu cf')); ?><!-- footer men end -->
-			
-			<?php if (class_exists('acf')) : if (get_field('top_footer_sidebars', 'option')) :
-				
-				get_template_part('template-parts/footer/footer', 'widgets-top');
-				
-			endif; endif; ?><!-- top footer sidebars end -->
-			
-			<?php if (class_exists('acf')) : if (get_field('bottom_footer_sidebars', 'option')) : 
-				
-				get_template_part('template-parts/footer/footer', 'widgets-bottom');
-				
-			 endif; endif; ?><!-- bottom footer sidebars end -->
+        <div class="site-footer">
+            
+            <?php wp_nav_menu(array('theme_location' => 'footer-menu', 'container' => false, 'depth' => 1, 'menu_class' => 'footer-menu cf')); ?><!-- footer men end -->
+            
+            <?php if (class_exists('acf')) : if (get_field('top_footer_sidebars', 'option')) :
+                
+                get_template_part('template-parts/footer/footer', 'widgets-top');
+                
+            endif; endif; ?><!-- top footer sidebars end -->
+            
+            <?php if (class_exists('acf')) : if (get_field('bottom_footer_sidebars', 'option')) : 
+                
+                get_template_part('template-parts/footer/footer', 'widgets-bottom');
+                
+             endif; endif; ?><!-- bottom footer sidebars end -->
 
         </footer>
 
-    </div><!-- container end -->
+    </div><!-- .container -->
 
-</div><!-- wrapper end -->
-
-</div><!-- #page -->
+</footer><!-- #site-wrapper-footer -->
 
 <?php wp_footer(); ?>
 
