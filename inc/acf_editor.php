@@ -22,7 +22,6 @@ add_filter('tiny_mce_before_init', function ($settings) {
         $style_formats = array();
 
         $els = [
-            'div' => 'block',
             'a' => 'selector',
             'span' => 'inline',
             'p' => 'selector',
@@ -35,12 +34,6 @@ add_filter('tiny_mce_before_init', function ($settings) {
         ];
 
         foreach ($elements as $key => $value) {
-            if ($value['css_selector'] == 'div') {
-                $wrapper = true;
-            } else {
-                $wrapper = false;
-            }
-
             $selector = $value['css_selector'];
 
             $style_formats[] = array(
@@ -52,9 +45,9 @@ add_filter('tiny_mce_before_init', function ($settings) {
         }
 
         $settings['style_formats'] = json_encode($style_formats);
-
-        return $settings;
     }
+	
+	return $settings;
 });
 
 // Sneakily remove the color picker to save PM's from themselves

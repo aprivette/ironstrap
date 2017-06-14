@@ -19,6 +19,7 @@ if (class_exists('acf')) {
     require 'inc/acf_favicon.php';
     require 'inc/acf_robots.php';
     require 'inc/acf_field_post_type.php';
+    require 'inc/acf_structured_data.php';
 }
 require 'inc/assets.php';
 require 'inc/global.php';
