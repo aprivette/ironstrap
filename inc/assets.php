@@ -46,7 +46,7 @@ class IronStrap_Assets
 $styles = [
     [
         "name" => "site",
-        "path" => "/css/min/site.min.css",
+        "path" => "/css/site.min.css",
         "media" => "screen"
     ],
     [
