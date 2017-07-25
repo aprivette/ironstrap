@@ -28,3 +28,8 @@ function ironstrap_remove_youtube_rel($code){
 }
 add_filter('embed_handler_html', 'ironstrap_remove_youtube_rel');
 add_filter('embed_oembed_html', 'ironstrap_remove_youtube_rel');
+
+// Register menu locations
+register_nav_menus(array( 
+    'main-menu' => 'Main Menu',
+));
