@@ -1,0 +1,194 @@
+{
+    "key": "group_58d306998cad8",
+    "title": "Item Options",
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "!=",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "fields": [
+        {
+            "key": "field_59413ea81ff19",
+            "label": "Social",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_58d306d68dd55",
+            "label": "LinkedIn Share Image",
+            "name": "linkedin_share_image_override",
+            "type": "image",
+            "instructions": "Overrides global IronStrap settings. Can't be larger than 180 x 110 pixels. Recommended size is as close to the maximum as possible.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": 180,
+            "max_height": 110,
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_58d307378dd57",
+            "label": "Twitter Share Image",
+            "name": "twitter_share_image_override",
+            "type": "image",
+            "instructions": "Overrides global IronStrap settings. Square image between 60 and 120 pixels wide\/high.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": 60,
+            "min_height": 60,
+            "min_size": "",
+            "max_width": 120,
+            "max_height": 120,
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_58d307368dd56",
+            "label": "Facebook Share Image",
+            "name": "facebook_share_image_override",
+            "type": "image",
+            "instructions": "Overrides global IronStrap settings. Recommended resolution is 1200 x 630 pixels.  Can't be smaller than 200 x 200 pixels.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": 200,
+            "min_height": 200,
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_59413eb51ff1a",
+            "label": "Structured Data",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59413ec71ff1b",
+            "label": "Structured Data",
+            "name": "structured_data",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_59413ed21ff1c",
+                    "label": "Property",
+                    "name": "property",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_59413edb1ff1d",
+                    "label": "Value",
+                    "name": "value",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        }
+    ],
+    "modified": 1505339532
+}
