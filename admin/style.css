@@ -130,6 +130,10 @@ only screen and (min-device-pixel-ratio: 1.5) {
 	content: "\f1c0";
 }
 
+.toplevel_page_ironstrap-options .acf-hl a.acf-tab-button[data-key="field_5940499b90225"]:before {
+	content: "\f0ce";
+}
+
 .toplevel_page_ironstrap-options .acf-button {
 	color: #555 !important;
 	border-color: #ccc !important;

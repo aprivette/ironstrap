@@ -11,29 +11,21 @@
  get_header(); ?>
 
 <div class="wrapper" id="page-wrapper">
+    
+    <div id="content">
+    
+        <main class="site-main" id="main">
+            
+            <div class="container">
+            
+                <?php ironstrap_the_field('404', 'option'); ?>
+                
+            </div><!-- .container -->
 
-	<div id="content">
+        </main><!-- #main -->
 
-		<main class="site-main" id="main">
-			
-			<div class="container">
+    </div><!-- #content -->
 
-				<?php
-					if(class_exists('acf')) :
-						if(get_field('404', 'option')) :
-							the_field('404', 'option');
-						endif;
-					endif;
-				?>
-				
-			</div><!--container -->
-
-		</main><!-- #main -->
-
-	</div><!-- .row -->
-
-</div><!-- Container end -->
-
-</div><!-- Wrapper end -->
+</div><!-- #page-wrapper -->
 
 <?php get_footer(); ?>
