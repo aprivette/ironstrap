@@ -10,11 +10,7 @@
 ?>
  
 <nav class="main-menu-wrapper">
-    
-    <div class="row">
         
-        <?php wp_nav_menu(array('theme_location' => 'main-menu', 'container' => false, 'depth' => 3, 'menu_class' => 'main-menu')); ?>
-        
-    </div><!-- .row-->
+    <?php wp_nav_menu(array('theme_location' => 'main-menu', 'container' => false, 'depth' => 3, 'menu_class' => 'main-menu')); ?>
     
 </nav><!-- Main menu wrapper -->

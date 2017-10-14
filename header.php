@@ -25,17 +25,29 @@
 
 <body <?php body_class(); ?>>
     
-    <?php if (ironstrap_get_field('top_header_sidebars', 'option')) {
-        get_template_part('template-parts/header/header', 'widgets');
-    } ?>
-    
     <header id="site-header-wrapper">
+        
+        <?php if (ironstrap_get_field('top_header_sidebars', 'option')) {
+            get_template_part('template-parts/header/header', 'sidebars');
+        } ?>
         
         <div class="container">
             
-            <?php get_template_part('template-parts/header/header', 'logo'); ?>
+            <div class="row align-items-center">
             
-            <?php get_template_part('template-parts/navigation/navigation', 'header'); ?>
+                <div class="col-8 col-md-4 col-lg-3">
+                
+                    <?php get_template_part('template-parts/header/header', 'logo'); ?>
+                    
+                </div>
+                
+                <div class="col-4 col-md-8 col-lg-9">
+                    
+                    <?php get_template_part('template-parts/navigation/navigation', 'header'); ?>
+                    
+                </div>
+                
+            </div><!-- .row -->
             
         </div><!-- .container -->
         

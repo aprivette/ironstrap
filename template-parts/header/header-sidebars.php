@@ -14,7 +14,7 @@ $top_header_sidebars = get_field('top_header_sidebars', 'option'); ?>
             
     <div class="container">
         
-        <div class="row no-gutters">
+        <div class="row">
             
             <?php if ($top_header_sidebars == 1) : ?>
             
