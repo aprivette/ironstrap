@@ -13,7 +13,7 @@
     
     <?php if (get_field('sidebar_orientation') == 'left') : ?>
 
-        <div class="col-md-<?php the_field('left_sidebar_width', 'option'); ?>">
+        <div class="col-<?php the_field('sidebar_column_breakpoint', 'option'); ?>-<?php the_field('left_sidebar_width', 'option'); ?>">
             
             <aside class="left-sidebar">
                 
@@ -27,7 +27,7 @@
 
 <?php elseif (ironstrap_get_field('force_child_sidebars', $post->post_parent) && ironstrap_get_field('sidebar_orientation', $post->post_parent) == 'left') : ?>
 
-    <div class="col-md-<?php the_field('left_sidebar_width', 'option'); ?>">
+    <div class="col-<?php the_field('sidebar_column_breakpoint', 'option'); ?>-<?php the_field('left_sidebar_width', 'option'); ?>">
         
         <aside class="left-sidebar">
             
