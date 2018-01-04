@@ -9,6 +9,7 @@
 	color: #fff !important;
 	border: 1px solid #454545 !important;
 	padding: 15px 10px !important;
+	background: #141414 !important;
 }
 
 .toplevel_page_ironstrap-options .acf-tab-wrap.-left .acf-tab-group li.active a {
@@ -132,6 +133,10 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 .toplevel_page_ironstrap-options .acf-hl a.acf-tab-button[data-key="field_5940499b90225"]:before {
 	content: "\f0ce";
+}
+
+.toplevel_page_ironstrap-options .acf-hl a.acf-tab-button[data-key="field_5a4d5f58c7a5b"]:before {
+	content: "\f045";
 }
 
 .toplevel_page_ironstrap-options .acf-button {
