@@ -9,7 +9,7 @@
  */
  ?>
 
-<footer id="site-wrapper-footer">
+<footer id="site-footer-wrapper">
     
     <div class="container">
         
@@ -33,7 +33,7 @@
         get_template_part('template-parts/footer/footer', 'widgets-bottom');
      } ?><!-- bottom footer sidebars end -->
 
-</footer><!-- #site-wrapper-footer -->
+</footer><!-- #site-footer-wrapper -->
 
 <?php wp_footer(); ?>
 
