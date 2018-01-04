@@ -15,11 +15,19 @@
     <div id="content">
         
         <?php
+        if (ironstrap_get_field('sidebar_column_breakpoint', 'option')) {
+            $breakpoint = get_field('sidebar_column_breakpoint', 'option');
+        } else {
+            $breakpoint = 'md';
+        }
         if (ironstrap_get_field('sidebar')) {
             if (get_field('sidebar_orientation') == 'left') {
                 $sidebar_width = intval(get_field('left_sidebar_width', 'option'));
             } else {
                 $sidebar_width = intval(get_field('right_sidebar_width', 'option'));
+            }
+            if (get_field('reverse_column_wrap', 'option')) {
+                $reverse_column_wrap = "flex-column-reverse flex-{$breakpoint}-row";
             }
         }
         if (!isset($sidebar_width)) {
@@ -32,11 +40,11 @@
             
             <div class="container">
                 
-                <div class="row">
+                <div class="row <?php echo (isset($reverse_column_wrap) ? $reverse_column_wrap : null); ?>">
                 
                     <?php get_template_part('template-parts/sidebars/sidebar', 'left'); ?>
                     
-                    <div class="col-md-<?php echo $content_width; ?>">
+                    <div class="<?php echo "col-{$breakpoint}-{$content_width}"; ?>">
                         
                         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                             
