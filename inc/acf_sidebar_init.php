@@ -14,105 +14,31 @@ class IronStrap_Sidebars
     function __construct()
     {
         $sidebars = [];
-
-        // Top header sidebars
-        if (get_field('top_header_sidebars', 'option') == 2 || get_field('top_header_sidebars', 'option') == 3) {
-            $sidebars[] = [
-                'name' => 'Header Left',
-                'id' => 'header_left',
-            ];
-
-            $sidebars[] = [
-                'name' => 'Header Right',
-                'id' => 'header_right',
-            ];
-        }
-
-        // Top header sidebars
-        if (get_field('top_header_sidebars', 'option') == 3) {
-            $sidebars[] = [
-                'name' => 'Header Center',
-                'id' => 'header_center',
-            ];
-        }
-
-        // Top header sidebars
-        if (get_field('top_header_sidebars', 'option') == 1) {
-            $sidebars[] = [
-                'name' => 'Header',
-                'id' => 'header_sidebar',
-            ];
-        }
-
-        // Top footer sidebars
-        if (get_field('top_footer_sidebars', 'option') == 2 || get_field('top_footer_sidebars', 'option') == 3 || get_field('top_footer_sidebars', 'option') == 4) {
-            $sidebars[] = [
-                'name' => 'Top Footer Left',
-                'id' => 'top_footer_left',
-            ];
-
-            $sidebars[] = [
-                'name' => 'Top Footer Right',
-                'id' => 'top_footer_right',
-            ];
-        }
-
-        // Top footer sidebars
-        if (get_field('top_footer_sidebars', 'option') == 4) {
-            $sidebars[] = [
-                'name' => 'Top Footer Inner Left',
-                'id' => 'top_footer_inner_left',
-            ];
-
-            $sidebars[] = [
-                'name' => 'Top Footer Inner Right',
-                'id' => 'top_footer_inner_right',
-            ];
-        }
-
-        // Top footer sidebars
-        if (get_field('top_footer_sidebars', 'option') == 3) {
-            $sidebars[] = [
-                'name' => 'Top Footer Center',
-                'id' => 'top_footer_center',
-            ];
-        }
-
-        // Top footer sidebars
-        if (get_field('top_footer_sidebars', 'option') == 1) {
-            $sidebars[] = [
-                'name' => 'Top Footer',
-                'id' => 'top_footer_sidebar',
-            ];
-        }
-
-        // Bottom footer sidebars
-        if (get_field('bottom_footer_sidebars', 'option') == 2 || get_field('bottom_footer_sidebars', 'option') == 3) {
-            $sidebars[] = [
-                'name' => 'Footer Bottom Left',
-                'id' => 'bottom_footer_left',
-            ];
-
-            $sidebars[] = [
-                'name' => 'Footer Bottom Right',
-                'id' => 'bottom_footer_right',
-            ];
-        }
-
-        // Bottom footer sidebars
-        if (get_field('bottom_footer_sidebars', 'option') == 3) {
-            $sidebars[] = [
-                'name' => 'Footer Bottom Center',
-                'id' => 'bottom_footer_center',
-            ];
-        }
-
-        // Bottom footer sidebars
-        if (get_field('bottom_footer_sidebars', 'option') == 1) {
-            $sidebars[] = [
+        $header_and_footer = [
+            [
+                'count' => get_field('top_header_sidebars', 'option'),
+                'name' => 'Header Top',
+                'id_prefix' => 'top_header',
+            ],
+            [
+                'count' => get_field('top_footer_sidebars', 'option'),
+                'name' => 'Footer Top',
+                'id_prefix' => 'top_footer',
+            ],
+            [
+                'count' => get_field('bottom_footer_sidebars', 'option'),
                 'name' => 'Footer Bottom',
-                'id' => 'bottom_footer_sidebar',
-            ];
+                'id_prefix' => 'bottom_footer',
+            ],
+        ];
+
+        foreach($header_and_footer as $sidebar_type) {
+            for ($i = 1; $i <= $sidebar_type['count']; $i++) {
+                $sidebars[] = [
+                    'name' => "{$sidebar_type['name']} {$i}",
+                    'id' => "{$sidebar_type['id_prefix']}_{$i}",
+                ];
+            }
         }
 
         // Sidebars defined in IronStrap Options
@@ -139,8 +65,6 @@ class IronStrap_Sidebars
                 register_sidebar(array(
                     'name'          => $sidebar['name'],
                     'id'            => $sidebar['id'],
-                    'before_widget' => '<div>',
-                    'after_widget'  => '</div>',
                     'before_title'  => '<p>',
                     'after_title'   => '</p>',
                 ));
