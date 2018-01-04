@@ -27,3 +27,18 @@ add_shortcode($prefix.'retina_image', function ($atts)
 
     return $output;
 });
+
+// Button shortcode
+add_shortcode($prefix.'btn', function ($atts)
+{
+    extract(shortcode_atts(array(
+        'text' => null,
+        'link' => "#",
+        'target' => "_self",
+        'classes' => null,
+    ), $atts));
+
+    $output = "<a href='{$link}' target='{$target}' class='btn {$classes}'>{$text}</a>";
+
+    return $output;
+});
