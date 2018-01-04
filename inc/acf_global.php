@@ -116,3 +116,31 @@ if (get_field('expose_acf_fields', 'option')) {
         }
     });
 }
+
+// Option to enable smooth scroll to anchor links
+if (get_field('enable_smooth_scroll', 'option')) {
+    add_action('wp_footer', function () {
+        echo '<script>
+var scroll = new SmoothScroll(\'a[href*="#"]\', {
+    offset: ' . get_field('sticky_header_offset_height', 'option') . ',
+});
+</script>'; 
+    }, PHP_INT_MAX);
+}
+
+// Globally disable related videos in YouTube embeds
+if (!function_exists('ironstrap_remove_youtube_rel')) {
+    function ironstrap_remove_youtube_rel($code)
+    {
+        if(strpos($code, 'youtu.be') !== false || strpos($code, 'youtube.com') !== false){
+            $return = preg_replace("@src=(['\"])?([^'\">\s]*)@", "src=$1$2&rel=0", $code);
+            return $return;
+        }
+        return $code;
+    }
+}
+
+if (get_field('hide_youtube_related_videos', 'option')) {
+    add_filter('embed_handler_html', 'ironstrap_remove_youtube_rel');
+    add_filter('embed_oembed_html', 'ironstrap_remove_youtube_rel');
+}
