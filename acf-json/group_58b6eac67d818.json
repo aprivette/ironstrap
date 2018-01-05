@@ -703,9 +703,12 @@
                 "id": ""
             },
             "choices": {
-                "2": "Sixth",
-                "3": "Fourth",
-                "4": "Third"
+                "1": "1 Columns",
+                "2": "2 Columns",
+                "3": "3 Columns",
+                "4": "4 Columns",
+                "5": "5 Columns",
+                "6": "6 Columns"
             },
             "allow_null": 1,
             "other_choice": 0,
@@ -728,9 +731,12 @@
                 "id": ""
             },
             "choices": {
-                "2": "Sixth",
-                "3": "Fourth",
-                "4": "Third"
+	            "1": "1 Columns",
+                "2": "2 Columns",
+                "3": "3 Columns",
+                "4": "4 Columns",
+                "5": "5 Columns",
+                "6": "6 Columns"
             },
             "allow_null": 1,
             "other_choice": 0,
