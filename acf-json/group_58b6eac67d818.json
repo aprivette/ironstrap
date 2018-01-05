@@ -370,7 +370,7 @@
         },
         {
             "key": "field_58b6ec58f828f",
-            "label": "Top Header Sidebars",
+            "label": "Top Header Columns",
             "name": "top_header_sidebars",
             "type": "select",
             "instructions": "",
@@ -399,7 +399,7 @@
         },
         {
             "key": "field_5a4e76cbf2c91",
-            "label": "Top Header Sidebars Breakpoint",
+            "label": "Top Header Columns Breakpoint",
             "name": "top_header_sidebars_breakpoint",
             "type": "select",
             "instructions": "",
@@ -452,7 +452,7 @@
         },
         {
             "key": "field_58b6faa18051c",
-            "label": "Top Footer Sidebars",
+            "label": "Top Footer Columns",
             "name": "top_footer_sidebars",
             "type": "select",
             "instructions": "",
@@ -481,7 +481,7 @@
         },
         {
             "key": "field_5a4e7741f2c92",
-            "label": "Top Footer Sidebars Breakpoint",
+            "label": "Top Footer Columns Breakpoint",
             "name": "top_footer_sidebars_breakpoint",
             "type": "select",
             "instructions": "",
@@ -518,7 +518,7 @@
         },
         {
             "key": "field_58b6fac8a135c",
-            "label": "Bottom Footer Sidebars",
+            "label": "Bottom Footer Columns",
             "name": "bottom_footer_sidebars",
             "type": "select",
             "instructions": "",
@@ -544,7 +544,7 @@
         },
         {
             "key": "field_5a4e775af2c93",
-            "label": "Bottom Footer Sidebars Breakpoint",
+            "label": "Bottom Footer Columns Breakpoint",
             "name": "bottom_footer_sidebars_breakpoint",
             "type": "select",
             "instructions": "",
@@ -703,12 +703,12 @@
                 "id": ""
             },
             "choices": {
-                "1": "1 Columns",
-                "2": "2 Columns",
-                "3": "3 Columns",
-                "4": "4 Columns",
-                "5": "5 Columns",
-                "6": "6 Columns"
+                "1": "1\/12",
+                "2": "1\/6",
+                "3": "1\/4",
+                "4": "1\/3",
+                "5": "5\/12",
+                "6": "1\/2"
             },
             "allow_null": 1,
             "other_choice": 0,
@@ -731,12 +731,12 @@
                 "id": ""
             },
             "choices": {
-                "1": "1 Columns",
-                "2": "2 Columns",
-                "3": "3 Columns",
-                "4": "4 Columns",
-                "5": "5 Columns",
-                "6": "6 Columns"
+                "1": "1\/12",
+                "2": "1\/6",
+                "3": "1\/4",
+                "4": "1\/3",
+                "5": "5\/12",
+                "6": "1\/2"
             },
             "allow_null": 1,
             "other_choice": 0,
@@ -1043,6 +1043,25 @@
             "endpoint": 0
         },
         {
+            "key": "field_5a4fb48f14111",
+            "label": "Redirect Import",
+            "name": "redirect_import",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": "csv"
+        },
+        {
             "key": "field_58d16fb88cd62",
             "label": "Redirects",
             "name": "redirects",
@@ -1063,9 +1082,9 @@
             "sub_fields": [
                 {
                     "key": "field_58d171608cd63",
-                    "label": "Page",
-                    "name": "page",
-                    "type": "post_object",
+                    "label": "Path",
+                    "name": "path",
+                    "type": "text",
                     "instructions": "",
                     "required": 1,
                     "conditional_logic": 0,
@@ -1074,37 +1093,17 @@
                         "class": "",
                         "id": ""
                     },
-                    "post_type": [],
-                    "taxonomy": [],
-                    "allow_null": 0,
-                    "multiple": 0,
-                    "return_format": "id",
-                    "ui": 1
-                },
-                {
-                    "key": "field_58d171a08cd65",
-                    "label": "External",
-                    "name": "external",
-                    "type": "true_false",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "message": "",
-                    "default_value": 0,
-                    "ui": 0,
-                    "ui_on_text": "",
-                    "ui_off_text": ""
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 },
                 {
                     "key": "field_58e958fa25ee8",
                     "label": "Redirect Type",
                     "name": "redirect_type",
-                    "type": "select",
+                    "type": "radio",
                     "instructions": "",
                     "required": 1,
                     "conditional_logic": 0,
@@ -1117,43 +1116,12 @@
                         "301": "301",
                         "302": "302"
                     },
-                    "default_value": [
-                        302
-                    ],
                     "allow_null": 0,
-                    "multiple": 0,
-                    "ui": 0,
-                    "ajax": 0,
-                    "return_format": "value",
-                    "placeholder": ""
-                },
-                {
-                    "key": "field_58d171ba8cd66",
-                    "label": "Redirect Page",
-                    "name": "redirect_page",
-                    "type": "post_object",
-                    "instructions": "",
-                    "required": 1,
-                    "conditional_logic": [
-                        [
-                            {
-                                "field": "field_58d171a08cd65",
-                                "operator": "!=",
-                                "value": "1"
-                            }
-                        ]
-                    ],
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "post_type": [],
-                    "taxonomy": [],
-                    "allow_null": 0,
-                    "multiple": 0,
-                    "return_format": "id",
-                    "ui": 1
+                    "other_choice": 0,
+                    "save_other_choice": 0,
+                    "default_value": 301,
+                    "layout": "horizontal",
+                    "return_format": "value"
                 },
                 {
                     "key": "field_58d171818cd64",
@@ -1162,15 +1130,7 @@
                     "type": "url",
                     "instructions": "",
                     "required": 1,
-                    "conditional_logic": [
-                        [
-                            {
-                                "field": "field_58d171a08cd65",
-                                "operator": "==",
-                                "value": "1"
-                            }
-                        ]
-                    ],
+                    "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
                         "class": "",
@@ -2374,5 +2334,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1515091829
+    "modified": 1515191951
 }
