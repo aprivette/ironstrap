@@ -23,7 +23,7 @@ add_shortcode($prefix.'retina_image', function ($atts)
     $standard = wp_get_attachment_image_src($standard_image, 'full');
     $retina = wp_get_attachment_image_src($retina_image, 'full');
 
-    $output = '<div class="retina-image" data-retina-image="' . $retina[0] . '" style="background-size: ' . $width . 'px ' . $height . 'px; background-image: url(' . $standard[0] . '); width: ' . $width . 'px; height: ' . $height . 'px;"></div>';
+    $output = '<figure class="retina-image" data-retina-image="' . $retina[0] . '" style="background-size: ' . $width . 'px ' . $height . 'px; background-image: url(' . $standard[0] . '); width: ' . $width . 'px; height: ' . $height . 'px;"></firgure>';
 
     return $output;
 });
