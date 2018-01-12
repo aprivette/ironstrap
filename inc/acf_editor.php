@@ -42,7 +42,7 @@ add_filter('tiny_mce_before_init', function ($settings)
                 'title' => $value['title'],
                 $els[$selector] => $value['css_selector'],
                 'classes' => $value['css_class'],
-                'wrapper' => $wrapper
+                'wrapper' => false
             );
         }
 
