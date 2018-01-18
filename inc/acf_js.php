@@ -29,7 +29,7 @@ add_action('wp_head', function ()
 // Adds custom javascript to the footer
 add_action('wp_footer', function ()
 {
-    if (get_field('header_javascript', 'option')) {
+    if (get_field('footer_javascript', 'option')) {
         $js = get_field('footer_javascript', 'option');
         $output = '';
         $output .= '<script type="text/javascript">';
