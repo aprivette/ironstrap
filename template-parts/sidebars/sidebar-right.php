@@ -15,11 +15,11 @@
 
         <div class="col-<?php the_field('sidebar_column_breakpoint', 'option'); ?>-<?php the_field('right_sidebar_width', 'option'); ?>">
             
-            <aside class="right-sidebar">
+            <ul class="right-sidebar">
                 
                 <?php dynamic_sidebar(get_field('sidebar_type')->name); ?>
                 
-            </aside><!-- right sidebar -->
+            </ul><!-- right sidebar -->
         
         </div><!-- .col -->
     
@@ -29,11 +29,11 @@
 
     <div class="col-<?php the_field('sidebar_column_breakpoint', 'option'); ?>-<?php the_field('right_sidebar_width', 'option'); ?>">
         
-        <aside class="right-sidebar">
+        <ul class="right-sidebar">
             
             <?php dynamic_sidebar(get_field('sidebar_type', $post->post_parent)->name); ?>
             
-        </aside><!-- right sidebar -->
+        </ul><!-- right sidebar -->
     
     </div><!-- .col -->
     
