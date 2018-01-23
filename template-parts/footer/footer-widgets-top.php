@@ -26,7 +26,11 @@ if (get_field('bottom_footer_sidebars_breakpoint', 'option')) {
     
                 <div class="col-<?php echo $breakpoint; ?> top-footer-sidebar-<?php echo $i; ?>">
                     
-                    <?php if (is_active_sidebar("top_footer_{$i}")) { dynamic_sidebar("top_footer_{$i}"); } ?>
+                    <ul>
+                    
+                        <?php if (is_active_sidebar("top_footer_{$i}")) { dynamic_sidebar("top_footer_{$i}"); } ?>
+                    
+                    </ul>
                     
                 </div><!-- top footer sidebar end -->
         
